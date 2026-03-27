@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Telma-l';
+    src: url(/src/assets/fonts/TELMA-LIGHT.TTF);
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telma-r';
+    src: url(/src/assets/fonts/TELMA-REGULAR.TTF);
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telma-m';
+    src: url(/src/assets/fonts/TELMA-MEDIUM.TTF);
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telma-b';
+    src: url(/src/assets/fonts/TELMA-BOLD.TTF);
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telma-xb';
+    src: url(/src/assets/fonts/TELMA-BLACK.TTF);
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telma-v';
+    src: url(/src/assets/fonts/TELMA-VARIABLE.TTF);
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'StoryScript';
+    src: url(/src/assets/fonts/STORYSCRIPT-REGULAR.TTF);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --primary-color: hsl(170, 98%, 7%);
+    --secondary-color: hsl(170, 98%, 18%);
+    --light: hsl(0, 0%, 100%);
+    --dark: hsl(0, 0%, 0%);
+    --filter: hsla(0, 0%, 8%, 80%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+body::before{
+    content: '';
+    background-image: url(./assets/images/glitter.png);
+    position: fixed;
+    inset: 0;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+@media (width > 648px){
+    body{
+        padding-left: 2rem;
+    }
+}
+
+h1, h2{
+    font-family: 'Telma';
+    font-weight: 500;
+}
+
+a, p{
+    font-family: "StoryScript"
+}
+
+a{
+    letter-spacing: clamp(0ch, 1vw, 1ch);
+}
+
+h1, h2, h3, a ,p{
+    color: var(--light);
+}
