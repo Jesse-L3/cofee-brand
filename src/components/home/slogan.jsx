@@ -1,8 +1,8 @@
-import React from 'react'
-
-const Slogan = () => {
+const Slogan = ({coffees}) => {
   return (
-    <div>Slogan</div>
+    <div className="max-w-4xl">
+      <h1 className="text-8xl drop-shadow-[0_0_10px_#ffffff]" dangerouslySetInnerHTML={{__html: coffees.slogan}}></h1>
+    </div>
   )
 }
 

@@ -4,9 +4,10 @@ import Navbar from './components/globals/navbar'
 import Slogan from './components/home/Slogan'
 import SeeMore from './components/home/seeOthers'
 import Product from './components/home/Product'
+import coffees  from "./data/home-content"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [coffeeList, setCoffeeList] = useState(0)
 
   return (
     <>
@@ -14,9 +15,12 @@ function App() {
       <Navbar />
     </header>
     <main>
-      <Slogan />
-      <SeeMore />
-      <Product />
+     
+      <Slogan key={coffees.id} coffees={coffees[coffeeList]}/>
+
+      <SeeMore key={coffees.id} coffees={coffees[coffeeList]}/>
+  
+      <Product key={coffees.id} coffees={coffees[coffeeList]}/>
     </main>
     </>
   )
