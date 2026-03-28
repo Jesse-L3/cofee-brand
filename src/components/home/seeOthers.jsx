@@ -2,7 +2,7 @@ import React from 'react'
 
 const seeOthers = () => {
   return (
-    <div>seeOthers</div>
+    <div className='Others'>seeOthers</div>
   )
 }
 

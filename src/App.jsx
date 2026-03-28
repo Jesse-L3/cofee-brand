@@ -14,12 +14,12 @@ function App() {
     <header>
       <Navbar />
     </header>
-    <main>
-     
+    <main className='flex justify-between'>
+     <section className='flex flex-col'>
       <Slogan key={coffees.id} coffees={coffees[coffeeList]}/>
-
+      
       <SeeMore key={coffees.id} coffees={coffees[coffeeList]}/>
-  
+  </section>
       <Product key={coffees.id} coffees={coffees[coffeeList]}/>
     </main>
     </>

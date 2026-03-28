@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
 main{
-    display: ;
+    position: relative;
+    display: flex;
+}
+
+.Slogan{
+    
+}
+
+.Others{
+    
+}
+
+.Product .coffee-name{
+    writing-mode: sideways-lr;
+    -webkit-text-stroke: white 3px;
 }
