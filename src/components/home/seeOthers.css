@@ -1,0 +1,21 @@
+/* collor pallete changes */
+
+body:has(.Macha-Deluxe.active){
+    --primary-color: oklch(0.2309 0.0417 179.21);
+    --secondary-color: oklch(0.4208 0.0782 176.33);
+}
+
+body:has(.Black-Berry-Blink.active){
+    --primary-color: oklch(0.7348 0.1151 339.16);
+    --secondary-color: oklch(0.2178 0 0);
+}
+
+body:has(.Mocha.active){
+    --primary-color: oklch(0.3013 0.0598 316.67);
+    --secondary-color: oklch(0.6463 0.1029 316.49);
+}
+
+body:has(.Sweet-Vanilla.active){
+    --primary-color: oklch(0.354 0.0326 107.95);
+    --secondary-color: oklch(0.6311 0.0514 82.47);
+}

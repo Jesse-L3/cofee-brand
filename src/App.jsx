@@ -9,6 +9,16 @@ import coffees  from "./data/home-content"
 function App() {
   const [coffeeList, setCoffeeList] = useState(0)
 
+  const HandleCoffeeChange = (index) => {
+    if (!document.startViewTransition) {
+      setCoffeeList(index)
+      return
+    }
+    document.startViewTransition(() => {
+      setCoffeeList(index)
+    })
+  }
+
   return (
     <>
     <header>
@@ -18,9 +28,15 @@ function App() {
      <section className='flex flex-col'>
       <Slogan key={coffees.id} coffees={coffees[coffeeList]}/>
       
-      <SeeMore key={coffees.id} coffees={coffees[coffeeList]}/>
+      <div className='flex gap-8'>
+      {coffees.map((coffee, index) => (
+        <SeeMore key={coffee.id} coffee={coffee} index={index} setCoffeeList={HandleCoffeeChange} coffeeList={coffeeList}/>
+      ))}
+      </div>
+
   </section>
-      <Product key={coffees.id} coffees={coffees[coffeeList]}/>
+      <Product key={coffees.id} coffees={coffees[coffeeList]} setCoffeeList={HandleCoffeeChange}/>
+
     </main>
     </>
   )
