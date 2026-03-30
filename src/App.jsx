@@ -36,7 +36,7 @@ function App() {
           from: "center"
         }
       })
-    })
+    },{scope: List})
 
   return (
     <>

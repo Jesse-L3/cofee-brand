@@ -1,7 +1,4 @@
 import './seeOthers.scss';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { useRef } from 'react';
 
 const seeOthers = ({coffee, index, setCoffeeList, coffeeList}) => {
   return (
