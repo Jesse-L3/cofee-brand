@@ -1,4 +1,4 @@
-import './seeOthers.css';
+import './seeOthers.scss';
 
 const seeOthers = ({coffee, index, setCoffeeList, coffeeList}) => {
   return (

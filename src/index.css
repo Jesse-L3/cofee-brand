@@ -93,6 +93,7 @@ body{
 body::before{
     content: '';
     /* background-image: url(./assets/images/glitter.png); */
+    background-image: url(./assets/images/waves.png);
     position: fixed;
     background-repeat: no-repeat;
     object-fit: cover;

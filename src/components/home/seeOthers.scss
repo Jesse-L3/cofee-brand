@@ -8,14 +8,26 @@ body:has(.Macha-Deluxe.active){
 body:has(.Black-Berry-Blink.active){
     --primary-color: oklch(0.7348 0.1151 339.16);
     --secondary-color: oklch(0.2178 0 0);
+    // &::before{
+    //     background-image: url(../../assets/images/Stars.png);
+    //     background-size: auto 50%;
+    //     background-repeat: repeat;
+    // }
 }
 
 body:has(.Mocha.active){
     --primary-color: oklch(0.3013 0.0598 316.67);
     --secondary-color: oklch(0.6463 0.1029 316.49);
+    // &::before{
+    //     background-image: url(../../assets/images/waves.png);
+    // }
 }
 
 body:has(.Sweet-Vanilla.active){
     --primary-color: oklch(0.354 0.0326 107.95);
     --secondary-color: oklch(0.6311 0.0514 82.47);
+
+    // &::before{
+    //     background-image: url(../../assets/images/vanilla.avif);
+    // }
 }
