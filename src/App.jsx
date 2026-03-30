@@ -1,4 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
 import "./App.css";
 import Navbar from "./components/globals/navbar";
 import Slogan from "./components/home/Slogan";
@@ -21,6 +24,19 @@ function App() {
       setCoffeeList(index);
     });
   };
+  
+  const List = useRef();
+
+    useGSAP(() => {
+      gsap.from(List.current.children, {
+        y:50,
+        delay:0.3,
+        stagger: {
+          each: 0.5,
+          from: "center"
+        }
+      })
+    })
 
   return (
     <>
@@ -32,7 +48,7 @@ function App() {
           <div className="flex flex-col">
             <Slogan key={coffees.id} coffees={coffees[coffeeList]} />
 
-            <div className="flex gap-8">
+            <div className="flex gap-8" ref={List}>
               {coffees.map((coffee, index) => (
                 <SeeMore
                   key={coffee.id}
