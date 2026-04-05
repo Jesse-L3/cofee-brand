@@ -9,7 +9,16 @@ import SeeMore from "./components/home/seeOthers";
 import Product from "./components/home/Product";
 import coffees from "./data/home-content";
 
+const highlight = () => {
+  const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+  const today = new Date();
+  return days[today.getDay()];
+}
+
 function App() {
+  const today = highlight();
+  const todaysHighlight = coffees.filter(coffee => coffee.day === today)
+  
   const [coffeeList, setCoffeeList] = useState(() => {
     return Number(localStorage.getItem('activeCoffee')) || 0
   });
@@ -46,10 +55,12 @@ function App() {
       <main>
         <section className="relative flex justify-between hero">
           <div className="flex flex-col">
-            <Slogan key={coffees.id} coffees={coffees[coffeeList]} />
+            <Slogan key={coffees.id} coffees={todaysHighlight[coffeeList]} />
 
-            <div className="flex gap-8" ref={List}>
-              {coffees.map((coffee, index) => (
+            <div className="self-center m-auto">
+              <h2 className="text-5xl text-center">Today's highlight</h2>
+              <div className="flex gap-16" ref={List}>
+              {todaysHighlight.map((coffee, index) => (
                 <SeeMore
                   key={coffee.id}
                   coffee={coffee}
@@ -58,11 +69,12 @@ function App() {
                   coffeeList={coffeeList}
                 />
               ))}
+              </div>
             </div>
           </div>
           <Product
             key={coffees.id}
-            coffees={coffees[coffeeList]}
+            coffees={todaysHighlight[coffeeList]}
             setCoffeeList={HandleCoffeeChange}
           />
         </section>

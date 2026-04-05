@@ -109,12 +109,12 @@ body::before{
     }
 }
 
-h1{
+h1, h2{
     font-family: 'Telma';
     font-weight: 400;
 }
 
-h2, a, p{
+a, p{
     font-family: "StoryScript"
 }
 
