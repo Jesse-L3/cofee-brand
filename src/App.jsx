@@ -9,6 +9,7 @@ import SeeMore from "./components/home/seeOthers";
 import Product from "./components/home/Product";
 import coffees from "./data/home-content";
 
+// 🕐 function that cycles through every day of the week for new highlighted cofees
 const highlight = () => {
   const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
   const today = new Date();
@@ -16,8 +17,10 @@ const highlight = () => {
 }
 
 function App() {
+  // grabs all the cofees from data and only displays the coffees that match with the current day
   const today = highlight();
   const todaysHighlight = coffees.filter(coffee => coffee.day === today)
+  
   
   const [coffeeList, setCoffeeList] = useState(() => {
     return Number(localStorage.getItem('activeCoffee')) || 0
@@ -37,7 +40,7 @@ function App() {
   const List = useRef();
 
     useGSAP(() => {
-      gsap.from(List.current.children, {
+      gsap.to(List.current.children, {
         y:50,
         delay:0.3,
         stagger: {

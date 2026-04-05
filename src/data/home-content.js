@@ -5,6 +5,7 @@ import Vanilla from "../assets/images/vanilla.png"
 
 import OddBluey from '../assets/images/oddbluey.png'
 import SpookyLavender from '../assets/images/Spooky Lavender.png'
+import FreshStawberry from '../assets/images/Fresh Strawberry.png'
 
 const coffees = [
     {
@@ -37,18 +38,25 @@ const coffees = [
     },
     {
         id: 5,
-        slogan: `<span class="font-[Telma-b]">Standard</span> But Nice\n and<span class="font-[Telma-b]"> Nice</span>`,
+        slogan: `<span class="font-[Telma-b]">Ordinary</span> in\n<span class="font-[Telma-b]">Good</span> ways`,
         image: OddBluey,
         flavour: 'Odd Bluey',
-        day: 'monday',
+        day: 'sunday',
     },
     {
         id: 6,
-        slogan: `<span class="font-[Telma-b]">Standard</span> But Nice\n and<span class="font-[Telma-b]"> Nice</span>`,
+        slogan: `<span class="font-[Telma-b]">Fear</span> to drink\n Spooky<span class="font-[Telma-b]"> sensation</span> `,
         image: SpookyLavender,
         flavour: 'Spooky Lavender',
-        day: 'monday',
-    }
+        day: 'sunday',
+    },
+    {
+        id: 7,
+        slogan: `<span class="font-[Telma-b]">Classics</span> with\n love<span class="font-[Telma-b]">beauty</span> of flavours`,
+        image: FreshStawberry,
+        flavour: 'Fresh Strawberry',
+        day: 'sunday',
+    },
 ]
 
 export default coffees

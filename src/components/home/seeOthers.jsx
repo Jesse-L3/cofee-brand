@@ -8,7 +8,7 @@ const seeOthers = ({ coffee, index, setCoffeeList, coffeeList }) => {
         ${index === coffeeList ? "before:bg-transparent" : "before:bg-[var(--filter)]" }`}
       >
         <button className="relative z-0" type="button" onClick={() => setCoffeeList(index)}>
-          <img className="w-[100px]" src={coffee.image} alt="" />
+          <img className="w-[100px] " src={coffee.image} alt="" />
         </button>
       </div>
     </>
