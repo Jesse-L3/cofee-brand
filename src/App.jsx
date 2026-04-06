@@ -94,7 +94,7 @@ function App() {
           />
         </section>
 
-        <section className="relative">
+        <section  style={{height: "400vh"}} className="relative">
           <ScrollAnimation />
         </section>
       </main>
