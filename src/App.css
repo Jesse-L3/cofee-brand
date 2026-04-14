@@ -6,3 +6,8 @@
     -webkit-text-stroke: white 3px;
 }
 
+@media (width > 648px){
+    .hero{
+        padding-left: 2rem;
+    }
+}

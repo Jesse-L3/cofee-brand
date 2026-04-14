@@ -103,11 +103,6 @@ body::before{
     z-index: -1;
 }
 
-@media (width > 648px){
-    body{
-        padding-left: 2rem;
-    }
-}
 
 h1, h2{
     font-family: 'Telma';

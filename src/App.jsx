@@ -10,6 +10,7 @@ import Product from "./components/home/Product";
 import coffees from "./data/home-content";
 
 import ScrollAnimation from "./components/home/scrollanimation"
+import CoffeeMenu from "./components/home/CoffeeMenu";
 
 // 🕐 function that cycles through every day of the week for new highlighted cofees
 const highlight = () => {
@@ -94,9 +95,10 @@ function App() {
           />
         </section>
 
-        <section  style={{height: "400vh"}} className="relative">
+        <section  style={{height: "400vh"}} className="relative overflow-hidden">
           <ScrollAnimation />
         </section>
+        <CoffeeMenu />
       </main>
     </>
   );

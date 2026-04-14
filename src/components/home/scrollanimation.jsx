@@ -24,11 +24,10 @@ const ScrollAnimation = () => {
     gsap.to(ScrollRef.current.querySelector("svg"), {
       scale: 25,
       fill: "black",
-      y: -340,
       scrollTrigger: {
         trigger: ".scroll-container",
-        start: "+=400",
-        end: "bottom",
+        start: "+=1",
+        end: "+=3940",
         scrub: 0.5,
         pin: false,
         markers: true,
@@ -40,11 +39,11 @@ const ScrollAnimation = () => {
         },
       },
     });
-    gsap.to(ScrollRef.current.querySelector("svg circle"), {
+    gsap.to(ScrollRef.current.querySelectorAll("svg circle, svg path"), {
       fill: "black",
       scrollTrigger: {
         trigger: ".scroll-container",
-        start: "+=400",
+        start: "+=1",
         end: "bottom bottom",
         scrub: 0.5,
         pin: false,
@@ -56,7 +55,7 @@ const ScrollAnimation = () => {
   return (
     <div
       ref={ScrollRef}
-      className="scroll-container h-screen flex justify-center items-center"
+      className="flex items-center justify-center h-screen scroll-container"
     >
       {/* <svg
         className="hidden rotate-10 sm:block"
@@ -73,7 +72,7 @@ const ScrollAnimation = () => {
       </svg> */}
 
       <svg
-        className="hidden rotate-10 sm:block"
+        className="fixed hidden rotate-10 sm:block"
         width="850"
         height="850"
         viewBox="0 0 70 70"
