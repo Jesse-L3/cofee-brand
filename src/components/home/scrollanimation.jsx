@@ -18,7 +18,7 @@ const ScrollAnimation = () => {
         end: "bottom",
         scrub: 0.5,
         pin: true,
-        markers: true,
+        // markers: true,
       },
     });
     gsap.to(ScrollRef.current.querySelector("svg"), {
@@ -27,10 +27,10 @@ const ScrollAnimation = () => {
       scrollTrigger: {
         trigger: ".scroll-container",
         start: "+=1",
-        end: "+=3940",
+        end: "+=4500",
         scrub: 0.5,
         pin: false,
-        markers: true,
+        // markers: true,
         onLeave: () => {
           ScrollRef.current.querySelector("svg").style.display = "none";
         },
@@ -47,7 +47,7 @@ const ScrollAnimation = () => {
         end: "bottom bottom",
         scrub: 0.5,
         pin: false,
-        markers: true,
+        // markers: true,
       },
     });
   });

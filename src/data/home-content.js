@@ -27,7 +27,7 @@ const coffees = [
         slogan: `Sweet and <span class="font-[Telma-b]">Good</span>\nAlways<span class="font-[Telma-b]"> Special</span>`,
         image: Mocha,
         flavour: 'Mocha',
-        day: 'sunday',
+        day: 'tuesday',
     },
     {
         id: 4,
@@ -41,14 +41,14 @@ const coffees = [
         slogan: `<span class="font-[Telma-b]">Ordinary</span> in\n<span class="font-[Telma-b]">Good</span> ways`,
         image: OddBluey,
         flavour: 'Odd Bluey',
-        day: 'monday',
+        day: 'tuesday',
     },
     {
         id: 6,
         slogan: `<span class="font-[Telma-b]">Fear</span> to drink\n Spooky<span class="font-[Telma-b]"> sensation</span> `,
         image: SpookyLavender,
         flavour: 'Spooky Lavender',
-        day: 'monday',
+        day: 'tuesday',
     },
     {
         id: 7,
