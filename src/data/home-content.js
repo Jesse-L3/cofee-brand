@@ -41,21 +41,21 @@ const coffees = [
         slogan: `<span class="font-[Telma-b]">Ordinary</span> in\n<span class="font-[Telma-b]">Good</span> ways`,
         image: OddBluey,
         flavour: 'Odd Bluey',
-        day: 'sunday',
+        day: 'monday',
     },
     {
         id: 6,
         slogan: `<span class="font-[Telma-b]">Fear</span> to drink\n Spooky<span class="font-[Telma-b]"> sensation</span> `,
         image: SpookyLavender,
         flavour: 'Spooky Lavender',
-        day: 'sunday',
+        day: 'monday',
     },
     {
         id: 7,
         slogan: `<span class="font-[Telma-b]">Classics</span> with\n love<span class="font-[Telma-b]">beauty</span> of flavours`,
         image: FreshStawberry,
         flavour: 'Fresh Strawberry',
-        day: 'sunday',
+        day: 'tuesday',
     },
 ]
 

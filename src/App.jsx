@@ -70,12 +70,12 @@ function App() {
       <main>
         <section className="relative flex justify-between hero">
           <div className="flex flex-col">
-            <Slogan key={coffees.id} coffees={coffees[coffeeList]} />
+            <Slogan key={coffees.id} coffees={todaysHighlight[coffeeList]} />
 
             <div className="self-center m-auto">
               <h2 className="text-5xl text-center">Today's highlight</h2>
               <div className="flex gap-16" ref={List}>
-                {coffees.map((coffee, index) => (
+                {todaysHighlight.map((coffee, index) => (
                   <SeeMore
                     key={coffee.id}
                     coffee={coffee}
@@ -89,7 +89,7 @@ function App() {
           </div>
           <Product
             key={coffees.id}
-            coffees={coffees[coffeeList]}
+            coffees={todaysHighlight[coffeeList]}
             setCoffeeList={HandleCoffeeChange}
           />
         </section>
