@@ -98,7 +98,8 @@ function App() {
         <section  style={{height: "400vh"}} className="relative overflow-hidden">
           <ScrollAnimation />
         </section>
-        <CoffeeMenu />
+        <CoffeeMenu coffees={coffees}
+        />
       </main>
     </>
   );

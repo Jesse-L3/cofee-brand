@@ -1,8 +1,13 @@
-
-
-const CoffeeMenu = () => {
+const CoffeeMenu = ({coffees}) => {
   return (
-    <div className="h-screen bg-[black] text-white">CoffeeMenu</div>
+    <section className="h-screen bg-[black]">
+      {coffees.map((coffee) => (
+        <div key={coffee.id} className="text-white ">
+            {coffee.flavour}
+            <img className="w-[100px]" src={coffee.image} alt={coffee.flavour} />
+        </div>
+      ))}
+    </section>
   )
 }
 
